@@ -16,7 +16,7 @@ import SmartToyTwoToneIcon from '@mui/icons-material/SmartToyTwoTone';
 
 
 
-const pages = ['Contact', 'Portfolio'];
+const pages = ['Contacto', 'Proyectos','Login'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -32,11 +32,11 @@ const ResponsiveAppBar = () => {
   return (
 
     <ThemeProvider theme={theme}>
-      <AppBar position="static" >
+      <AppBar position="fixed"  id='navbar'>
         <Container maxWidth="xl"  >
           <Toolbar disableGutters >
-            <SmartToyTwoToneIcon color='secondary' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='rocketghost' />
-            <SmartToyTwoToneIcon color='secondary' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            <SmartToyTwoToneIcon color='primary' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='rocketghost' />
+            <SmartToyTwoToneIcon color='secondary' sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} />
             <Typography
 
               variant="h6"
@@ -53,7 +53,7 @@ const ResponsiveAppBar = () => {
                 letterSpacing: '.3rem',
                 textDecoration: 'none'
               }}
-              color='secondary'
+              color='text.primary'
             >
               CATALINA
             </Typography>
@@ -111,11 +111,10 @@ const ResponsiveAppBar = () => {
                 letterSpacing: '.3rem',
                 textDecoration: 'none',
               }}
-              color='secondary'
             >
               CATALINA
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }  }}>
               {pages.map((page) => (
                 <Button
                   key={page}

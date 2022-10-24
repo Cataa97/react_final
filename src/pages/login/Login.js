@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import { CardActionArea } from '@mui/material';
 
 
-function Contact() {
+function Login() {
   return (
     <ThemeProvider theme={theme}>
       <Container color={'secondary'} id='container_principal' sx={{pt:15}}>
@@ -30,5 +30,4 @@ function Contact() {
   )
 }
 
-
-export default Contact;
+export default Login;

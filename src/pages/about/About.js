@@ -10,24 +10,26 @@ import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 import '../../components/styles/style.css'
 
+
 function About() {
   return (
     <ThemeProvider theme={theme}>
-      <Container id='container_principal'>
+      <Container background='transparent' id='container_principal' sx={{ pt: 10 }}>
         <Box>
           <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 1 }} >
             <Grid item lg={11} xs={12}>
-              <Typography variant="h3" gutterBottom sx={{ mt: 5, textAlign: 'start' }}>
-                Catalina Castillo
+              <Typography color='secondary' variant="h3" gutterBottom sx={{ mt: 5, textAlign: 'start' }}>
+                Catalina Castillo Reygada
               </Typography>
-              <Typography variant="h6" gutterBottom sx={{ textAlign: 'start' }}>
+              <Typography color='text.primary' variant="h6" gutterBottom sx={{ textAlign: 'start' }}>
                 Full Stack Developer (Games / Mobile / Desktop)
               </Typography>
-              <Divider>
-                <Chip label="MY SKILLS" />
+              <Box>
+              <Divider sx={{ml: 6, p:2, textAlign:'center'}} >
+                <Chip label="HABILIDADES" color='secondary' />
               </Divider>
-              <img className="logo__size" src="https://raw.githubusercontent.com/Cataa97/portafolio/149d0cf7fede29454481ae1ae5c88550b067e330/assets/img/html-1.svg" alt="HTML5" />
-              <img className="logo__size" src="https://raw.githubusercontent.com/Cataa97/portafolio/149d0cf7fede29454481ae1ae5c88550b067e330/assets/img/css-3.svg" alt="CSS3" />
+              </Box>
+              <img className="logo__size_custom" src="https://raw.githubusercontent.com/Cataa97/portafolio/149d0cf7fede29454481ae1ae5c88550b067e330/assets/img/css-3.svg" alt="CSS3" />
               <img
                 className="logo__size"
                 src="https://raw.githubusercontent.com/Cataa97/portafolio/149d0cf7fede29454481ae1ae5c88550b067e330/assets/img/logo-javascript.svg"
@@ -56,6 +58,9 @@ function About() {
               />
             </Grid>
           </Grid>
+          <Divider  sx={{ p:2}}>
+              <Chip label="SOBRE MÍ"  color='secondary'  sx={{ p:1}}/>
+            </Divider>
         </Box>
       </Container>
     </ThemeProvider>

@@ -1,17 +1,27 @@
-import { grey } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
-
 const theme = createTheme({
   palette: {
+    type: 'light',
     primary: {
-      main: grey[900],
-      light: grey[800],
+      main: '#212121',
     },
     secondary: {
-      main: grey[50],
-      contrastText: grey[900],
+      main: '#00e5ff',
     },
-  }
+    background: {
+      default: '#303030',
+      paper: '#424242',
+    },
+    info: {
+      main: '#9e9e9e',
+    },
+    text: {
+      primary: '#ffebee',
+    },
+    typography: {
+      fontFamily: 'Signika',
+    },
+  },
 
 });
 
