@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--body-color);
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+/*==================== VARIABLES ====================*/
+:root {
+    --first-color: #212121;
+    --second-color: #00bcd4;
+    --first-color-alt: #424242;
+    --first-color-lighter: rgb(37, 41, 54);
+    --title-color: #fff;
+    --text-color: #fff;
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: #fff;
+    --body-color: #181818;
+    --container-color: #FFF;
+}
+
+
+
+.rocketghost {
+    visibility: hidden;
+    flex-grow: 1;
+    text-align: center
+}
+
+#container_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.logo__size {
+    width: 50px;
+    height: 50px;
+    margin: .5rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    #avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    #avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
