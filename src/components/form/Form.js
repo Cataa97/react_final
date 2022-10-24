@@ -23,14 +23,12 @@ const FormContact = () => {
       <Typography variant="h3" color='secondary' gutterBottom sx={{ textAlign: 'center', pt: 5 }}>
         Contact
       </Typography>
-      <Box component="form"
+      <Boxgit 
         display="flex"
         justifyContent="center"
         alignItems="center"
         sx={{ pt: 2, width: 250, ml: 105 }}
       >
-
-        <div>
           <form onSubmit={formik.handleSubmit}>
             <TextField
               fullWidth
@@ -67,7 +65,6 @@ const FormContact = () => {
               Enviar
             </Button>
           </form>
-        </div>
       </Box >
     </ThemeProvider>
 
