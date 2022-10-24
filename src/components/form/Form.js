@@ -23,7 +23,7 @@ const FormContact = () => {
       <Typography variant="h3" color='secondary' gutterBottom sx={{ textAlign: 'center', pt: 5 }}>
         Contact
       </Typography>
-      <Boxgit 
+      <Box
         display="flex"
         justifyContent="center"
         alignItems="center"
