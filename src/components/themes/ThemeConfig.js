@@ -20,6 +20,8 @@ const theme = createTheme({
     },
     typography: {
       fontFamily: 'Signika',
+      fontSize: 17,
+      fontWeightBold: 700,
     },
   },
 
