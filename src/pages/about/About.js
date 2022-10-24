@@ -79,21 +79,21 @@ function About() {
                 <ListItemAvatar>
                   <Avatar alt="Catalina Castillo" src="https://scontent.fscl11-2.fna.fbcdn.net/v/t1.6435-9/94573906_1523400887834515_2483486137931268096_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=bdEi4lHy7MYAX8DUwzv&_nc_ht=scontent.fscl11-2.fna&oh=00_AT9fMC0O4QefxDzZ9iDf0lIlHxosDxJW5CYPzRXdXJaZwQ&oe=6377C0B1" sx={{ width: 50, height: 50 }} />
                 </ListItemAvatar>
-                <ListItemText primary="1997" secondary="Nacida en Antofagasta, Chile." />
+                <ListItemText primary="1997" secondary="Nacida en Antofagasta, Chile." secondaryTypographyProps={{color:'primary.text'}} />
               </ListItem>
               <Divider></Divider>
               <ListItem>
                 <ListItemAvatar>
                   <Avatar alt="Ing en Telecomunicaciones" src="https://media-exp1.licdn.com/dms/image/C560BAQFW4alUTvpiZQ/company-logo_100_100/0/1519875687181?e=1674691200&v=beta&t=_N8Z5tI4RzRoLPPvoGi-UbOS-lzJrokIAfs6YGE-z5w" sx={{ width: 50, height: 50 }} />
                 </ListItemAvatar>
-                <ListItemText primary="2017" secondary="Ing en Telecomunicaciones, Conectividad y Redes, Inacap." />
+                <ListItemText primary="2017" secondary="Ing en Telecomunicaciones, Conectividad y Redes, Inacap." secondaryTypographyProps={{color:'primary.text'}} />
               </ListItem>
               <Divider></Divider>
               <ListItem>
                 <ListItemAvatar>
                   <Avatar alt="Larn U" src="https://media-exp1.licdn.com/dms/image/C4E0BAQGgOCCEd18iJw/company-logo_100_100/0/1641417117766?e=1674691200&v=beta&t=hNSb2YuXNo1WF2WJ3VXAK9azjYe0Tpd35phvMfQuhIY" sx={{ width: 50, height: 50 }} />
                 </ListItemAvatar>
-                <ListItemText primary="2022" secondary="Full Stack Developer, Larn U." />
+                <ListItemText primary="2022" secondary="Full Stack Developer, Larn U."  secondaryTypographyProps={{color:'primary.text'}}  />
               </ListItem>
             </List>
           </Box>
