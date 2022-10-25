@@ -110,6 +110,7 @@ const ResponsiveAppBar = () => {
                 fontWeight: 700,
                 letterSpacing: '.3rem',
                 textDecoration: 'none',
+                color: 'text.primary'
               }}
             >
               CATALINA
