@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import '../styles/style.css';
 const theme = createTheme({
   palette: {
     type: 'light',
@@ -6,7 +7,7 @@ const theme = createTheme({
       main: '#212121',
     },
     secondary: {
-      main: '#00e5ff',
+      main: '#4dd0e1',
     },
     background: {
       default: '#303030',
@@ -18,11 +19,9 @@ const theme = createTheme({
     text: {
       primary: '#ffebee',
     },
-    typography: {
-      fontFamily: 'Signika',
-      fontSize: 17,
-      fontWeightBold: 700,
-    },
+  },
+  typography: {
+    fontFamily: "'Signika',sans-serif",
   },
 
 });
