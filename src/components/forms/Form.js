@@ -3,6 +3,9 @@ import validationSchema from './Validation';
 import { Button, TextField} from '@mui/material';
 import { Fragment } from 'react';
 
+// credenciales: 
+// email": "catalina.castillo19c@gmail.com",
+//   "discordId": "334857790356979733"
 
 const FormContact = () => {
   const formik = useFormik({
