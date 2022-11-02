@@ -3,6 +3,7 @@ import theme from './components/themes/ThemeConfig';
 import Home from './pages/home/Home';
 import { Container } from '@mui/material';
 
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -10,6 +11,7 @@ function App() {
         <Home />
       </Container>
     </ThemeProvider>
+  
   );
 }
 

@@ -11,6 +11,7 @@ import Chip from '@mui/material/Chip';
 import '../../components/styles/style.css'
 
 
+
 function About() {
   return (
     <ThemeProvider theme={theme}>
@@ -62,7 +63,7 @@ function About() {
             </Typography>
           </Box>
           <Divider sx={{ p: 2, ml: 1}}>
-            <Chip label="WORK" color='secondary' sx={{ p: 1, letterSpacing: 1.5 }} />
+            <Chip label="BIO" color='secondary' sx={{ p: 1, letterSpacing: 1.5 }} />
           </Divider>
           <Box sx={{ width: 460, ml: 7 }}>
             <Typography color='text.primary' variant="h6" gutterBottom sx={{ textAlign: 'start', textJustify: 20, ml: 1 }}>

@@ -17,6 +17,10 @@ const validationSchema = yup.object({
         .string('Ingresa tur email')
         .email('Porfavor ingresa un email valido.')
         .required('El email es obligatorio'),
+    password: yup
+        .string('Ingresa tu password')
+        .email('Porfavor ingresa una contraseña valida.')
+        .required('El password es obligatorio'),
 });
 
 

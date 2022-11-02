@@ -16,7 +16,7 @@ import SmartToyTwoToneIcon from '@mui/icons-material/SmartToyTwoTone';
 
 
 
-const pages = ['Contacto', 'Proyectos','Login'];
+const pages = ['Contacto', 'Proyectos', 'Login'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -32,7 +32,11 @@ const ResponsiveAppBar = () => {
   return (
 
     <ThemeProvider theme={theme}>
-      <AppBar position="fixed"  id='navbar'>
+      <AppBar position="fixed" id='navbar' color="transparent" sx={{
+        "& > .MuiBackdrop-root": {
+          backdropFilter: "blur(2px)"
+        }
+      }}>
         <Container maxWidth="xl"  >
           <Toolbar disableGutters >
             <SmartToyTwoToneIcon color='primary' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='rocketghost' />
@@ -86,8 +90,6 @@ const ResponsiveAppBar = () => {
                 sx={{
                   display: { xs: 'block', md: 'none' },
                 }}
-
-
               >
                 {pages.map((page) => (
                   <MenuItem key={page} component={Link} to={page} onClick={handleCloseNavMenu}  >
@@ -115,7 +117,7 @@ const ResponsiveAppBar = () => {
             >
               CATALINA
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }  }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button
                   key={page}
@@ -128,12 +130,10 @@ const ResponsiveAppBar = () => {
                 </Button>
               ))}
             </Box>
-
-
           </Toolbar>
         </Container>
       </AppBar>
-    </ThemeProvider>
+    </ThemeProvider >
 
 
 
